@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Authentic Sneakers</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./images/logo.jpg" alt="logo image">
+        <h1>Authentic Sneakers</h1>
+        
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li><a href="./cart.html">cart</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="./3d-display.html">3D Display</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+       <!--<img src="#" alt="background image">--> 
+        <h1>Step into Authenticity</h1>
+        <p>
+          Discover your perfect pair from our exclusive collection of sneakers.
+        </p>
+        <a href="./shop.html" class="cta-button">Shop Now</a>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="feature">
+        <img src="./images/Air-max.jpg" alt="Exclusive Designs" />
+        <h3>Exclusive Designs</h3>
+        <p>Unique sneakers curated just for you.</p>
+      </div>
+
+      
+      <div class="feature">
+        <img src="./images/orange-jordan.jpg" alt="Quality Guaranteed" />
+        <h3>Quality Guaranteed</h3>
+        <p>Premium materials for lasting comfort.</p>
+      </div>
+      <div class="feature">
+        <img src="./images/red-nike.jpg" alt="Worldwide Delivery" />
+        <h3>Worldwide Delivery</h3>
+        <p>Fast delivery wherever you are.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Authentic Sneakers. All rights reserved.</p>
+  </footer>
+
+  <!-- Simple JS for Mobile Navigation -->
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
+    });
+  </script>
+</body>
+</html>
